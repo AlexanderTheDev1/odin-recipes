@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-size: 16px;
+    --black: #000000;
+    --ora-red: #ff4500;
+    --ora-dark-red: #bb1600;
+}
+a {
+    text-decoration: none;
+    color: var(--ora-red);
+    cursor: pointer;
+}
+.b-link {
+    color: var(--black);
+}
+a:hover {
+    color: var(--ora-dark-red);
+}
+html {
+    font-size: 1rem;
+}
+body {
+    margin: 0.2rem;
+}
+main {
+    margin: 0.2rem;
+}
+header {
+    margin: 0.2rem; 
+}
+footer {
+    margin: 0.2rem;
+}
+
+h1 {
+    text-align: center;
+}
+header > a {
+    padding-left: 0.2rem;
+}
+header > p {
+    margin-left: 1rem;
+}
+#container-1, #container-2, #container-3 {
+    display: flex;
+    margin: 1rem;
+}
+
+#container-1 p:hover {
+    text-decoration: underline var(--ora-dark-red);
+}
+#container-1 p {
+    text-decoration: underline var(--ora-red);
+    cursor: pointer;
+}
+#container-1 p, #container-2 p, #container-3 p {
+    margin-left: 1rem;
+}
+#container-2 p, #container-3 p {
+    font-size: 0.8rem;
+}
+#container-1 img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.2rem;
+}
+#container-4 img {
+    width: 15rem;
+    height: 15rem;
+}
+#container-4 {
+    margin: 2rem;
+}
+.d-box {
+    margin: 2rem;
+}
+.d-box h3 {
+    text-decoration: underline var(--ora-dark-red);
+    padding: 0.5rem;
+}
+ol {
+    list-style: none; counter-reset: li;
+}
+ol li {
+    counter-increment: li;
+}
+ol li::before {content: counter(li); color: var(--black);
+    display: inline-block; width: 1em;
+    margin-left: -1em}
