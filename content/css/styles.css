@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-size: 16px;
+    --black: #000000;
+    --ora-red: #ff4500;
+    --ora-dark-red: #bb1600;
+}
+a {
+    text-decoration: none;
+    color: var(--ora-red);
+    cursor: pointer;
+}
+a:hover {
+    color: var(--ora-dark-red);
+}
+html {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0.2rem;
+}
+main {
+    margin: 0.2rem;
+}
+header {
+    margin: 0.2rem; 
+}
+footer {
+    margin: 0.2rem;
+}
+h1 {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+h1::first-letter {
+    color: var(--ora-red);
+}
+#container-1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+#container-1 a{
+    margin: 1rem;
+}
+#container-1 a:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+#container-1 img {
+    width: 14rem;
+    height: 10rem;
+}
+#container-1 img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
