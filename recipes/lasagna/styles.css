@@ -37,16 +37,19 @@ footer {
 
 h1 {
     text-align: center;
+    margin: 2rem
 }
 header > a {
     padding-left: 0.2rem;
 }
 header > p {
     margin-left: 1rem;
+    text-align: center;
 }
 #container-1, #container-2, #container-3 {
     display: flex;
     margin: 1rem;
+    justify-content: center;
 }
 
 #container-1 p:hover {
@@ -67,15 +70,39 @@ header > p {
     height: 1rem;
     margin-left: 0.2rem;
 }
-#container-4 img {
-    width: 15rem;
-    height: 15rem;
+#image-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
 }
-#container-4 {
-    margin: 2rem;
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#container-4 h2, #container-4 p {
+    padding: 0.5rem 1rem;
+    padding-right: 10rem;
+}
+#container-4 img {
+    width: 20rem;
+    height: 15rem;
+    margin: 1rem;
 }
 .d-box {
     margin: 2rem;
+    padding: 4rem 5rem 0 0;
+}
+.d-box li {
+    padding: 0.2rem;
 }
 .d-box h3 {
     text-decoration: underline var(--ora-dark-red);
@@ -87,6 +114,8 @@ ol {
 ol li {
     counter-increment: li;
 }
-ol li::before {content: counter(li); color: var(--black);
+ol li::before {
+    content: counter(li); color: var(--black);
     display: inline-block; width: 1em;
-    margin-left: -1em}
+    margin-left: -1em
+}
