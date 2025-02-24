@@ -21,6 +21,7 @@ a:hover {
 }
 html {
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0.2rem;
@@ -45,11 +46,20 @@ header > a {
 header > p {
     margin-left: 1rem;
     text-align: center;
+    padding: 0 30rem;
 }
 #container-1, #container-2, #container-3 {
     display: flex;
     margin: 1rem;
+    padding: 1rem;
     justify-content: center;
+}
+#container-2 {
+    padding-bottom: 0;
+}
+#container-3 {
+    padding-top: 0;
+    padding-bottom: 2rem;
 }
 
 #container-1 p:hover {
@@ -70,11 +80,11 @@ header > p {
     height: 1rem;
     margin-left: 0.2rem;
 }
-#image-1 {
+#image-1 img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
+    width: 25rem;
     height: 20rem;
     margin-bottom: 5rem;
     padding: 1rem;
@@ -87,19 +97,9 @@ header > p {
     flex-direction: column;
 }
 
-
-#container-4 h2, #container-4 p {
-    padding: 0.5rem 1rem;
-    padding-right: 10rem;
-}
-#container-4 img {
-    width: 20rem;
-    height: 15rem;
-    margin: 1rem;
-}
 .d-box {
     margin: 2rem;
-    padding: 4rem 5rem 0 0;
+    padding: 4rem 20rem 0 0;
 }
 .d-box li {
     padding: 0.2rem;
@@ -107,6 +107,13 @@ header > p {
 .d-box h3 {
     text-decoration: underline var(--ora-dark-red);
     padding: 0.5rem;
+    font-size: 2rem;
+}
+.d-box p {
+    padding: 1rem;
+}
+.d-box li::marker {
+    color: var(--ora-red);
 }
 ol {
     list-style: none; counter-reset: li;
